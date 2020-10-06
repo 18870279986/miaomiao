@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+        <link rel="stylesheet" href="<%= BASE_URL %>css/common.css">
+        <link rel="stylesheet" href="<%= BASE_URL %>css/iconfont/iconfont.css">
+        <!-- 引入swiper 插件中的 css 和 js 详情页 图片可以左右轮播 -->
+        <link rel="stylesheet" href="<%= BASE_URL %>libs/swiper-4.1.0.min.css">
+        <script src="<%= BASE_URL %>libs/swiper-4.1.0.min.js"></script>
+        <title>miaomiao</title>
+    </head>
+    <style>
+        #app {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        #app>div {
+            /* height: 100%; */
+            width: 100%;
+            text-align: center;
+        }
+
+        /* loadmore 组件上拉加载样式改变 */
+        .mint-loadmore .mint-loadmore-bottom {
+            margin-bottom: 10px;
+        }
+        .mint-loadmore-bottom .mint-loadmore-spinner.mint-spinner-fading-circle {
+            display: none;
+        }
+        .mint-loadmore .mint-loadmore-content.is-dropped {
+            transform: translate3d(0px, -20px, 0px)!important;
+        }
+        .mint-loadmore .mint-loadmore-bottom .mint-loadmore-text {
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <noscript>
+            <strong>We're sorry but miaomiao doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        <!-- dom('#app') 会被 template 组件替换掉 -->
+        <div id="app">
+            <div>喵喵电影正在加载中...</div>
+        </div>
+    </body>
+</html>
